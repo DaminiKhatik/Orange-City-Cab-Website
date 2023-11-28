@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="contact">
+      <div class="contact1">
+        <h2>Contact Us</h2>
+        <p>
+          Embark on an unforgettable journey through Nagpur with Orange City Car
+          Rentals, your trusted partner for seamless car rental experiences.
+          Explore the city at your own pace, discover hidden gems, and create
+          lasting memories. Contact us today and experience the Orange City Car
+          Rentals difference. <br />📍 Plot No 59, 60 Kusum Pride Flat No 501,
+          Chiranjeevi Nagar, Landmark UCO Bank, Narendra Nagar, Nagpur – 440015
+        </p>
+      </div>
+
+      <div class="contact1">
+        <form id="contactForm">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Your Mob No"
+            required
+          />
+
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Message"
+            required
+          ></textarea>
+
+          <label for="agree">
+            <input type="checkbox" id="agree" name="agree" required />
+            I agree to the terms and conditions
+          </label>
+          <br /><br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the form from submitting
+
+          // Your form processing logic here
+
+          // Show a simple alert for demonstration purposes
+          alert("Form submitted successfully!");
+        });
+    </script>
+    <div>
+      <a href="main.html"><center>Back to Homepage</center></a>
+    </div>
+  </body>
+</html>
